@@ -55,9 +55,7 @@ function closeModal() {
 // Закрытие по клику вне окна
 window.onclick = function(event) {
     if (event.target == document.getElementById('modal')) closeModal();
-
 }
-// Добавь это внутрь объекта data в app.js
     bsod: {
         title: "Коды BSOD (Синий экран)",
         content: `
