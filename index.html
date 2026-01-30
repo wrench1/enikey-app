@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enikey Helper</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="logo"> Директор Интернета</div>
+        <p class="subtitle">Справочник эникея</p>
+    </div>
+
+    <div class="grid-container">
+        <button class="grid-item" onclick="openSection('bios')">
+            <span class="emoji">⌨️</span>
+            <span class="label">Вход в BIOS</span>
+        </button>
+        <button class="grid-item" onclick="openSection('beeps')">
+            <span class="emoji">🔊</span>
+            <span class="label">Сигналы BIOS</span>
+        </button>
+
+        <button class="grid-item" onclick="openSection('bsod')">
+            <span class="emoji">🟦</span>
+            <span class="label">Коды BSOD</span>
+        </button>
+        <button class="grid-item" onclick="openSection('smart')">
+            <span class="emoji">💾</span>
+            <span class="label">S.M.A.R.T. HDD</span>
+        </button>
+
+        <button class="grid-item" onclick="openSection('network')">
+            <span class="emoji">🌐</span>
+            <span class="label">Настройка IP</span>
+        </button>
+        <button class="grid-item" onclick="openSection('remote')">
+            <span class="emoji">🖥️</span>
+            <span class="label">Удаленка</span>
+        </button>
+
+        <button class="grid-item" onclick="openSection('commands')">
+            <span class="emoji">🐚</span>
+            <span class="label">CMD / PS</span>
+        </button>
+        <button class="grid-item" onclick="openSection('win-keys')">
+            <span class="emoji">⌨️</span>
+            <span class="label">Win + Keys</span>
+        </button>
+
+        <button class="grid-item" onclick="openSection('hardware')">
+            <span class="emoji">🔌</span>
+            <span class="label">Распиновки</span>
+        </button>
+        <button class="grid-item" onclick="openSection('printers')">
+            <span class="emoji">🖨️</span>
+            <span class="label">Принтеры</span>
+        </button>
+
+        <button class="grid-item" onclick="openSection('soft')">
+            <span class="emoji">📦</span>
+            <span class="label">Packer / Ninite</span>
+        </button>
+        <button class="grid-item" onclick="openSection('passwords')">
+            <span class="emoji">🔑</span>
+            <span class="label">Дефолт. логины</span>
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2 id="modal-title">Заголовок</h2>
+        <div id="modal-body">Контент...</div>
+    </div>
+</div>
+</body>
+</html>
