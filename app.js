@@ -55,4 +55,37 @@ function closeModal() {
 // Закрытие по клику вне окна
 window.onclick = function(event) {
     if (event.target == document.getElementById('modal')) closeModal();
+
 }
+// Добавь это внутрь объекта data в app.js
+    bsod: {
+        title: "Коды BSOD (Синий экран)",
+        content: `
+            <table class="info-table">
+                <tr><td>0x0000007B</td><td>Ошибка драйвера HDD/SATA</td></tr>
+                <tr><td>0x000000D1</td><td>Ошибка драйвера (часто Wi-Fi)</td></tr>
+                <tr><td>0x00000050</td><td>Ошибка памяти / Видеокарты</td></tr>
+                <tr><td>CRITICAL_PROCESS_DIED</td><td>Убит системный процесс</td></tr>
+            </table>`
+    },
+    remote: {
+        title: "Удаленный доступ",
+        content: `
+            <p><b>RustDesk:</b> Open-source замена AnyDesk</p>
+            <p><b>AeroAdmin:</b> Без установки, один exe</p>
+            <p><b>UltraVNC:</b> Для локальных сетей</p>`
+    },
+    passwords: {
+        title: "Дефолтные пароли",
+        content: `
+            <p><b>Роутеры:</b> admin / admin, admin / (пусто)</p>
+            <p><b>D-Link:</b> admin / (пусто)</p>
+            <p><b>Keenetic:</b> admin / 1234</p>`
+    },
+    hardware: {
+        title: "Распиновка (Pinout)",
+        content: `
+            <p><b>Front Panel:</b> PW_SW (Power), RES_SW (Reset)</p>
+            <p><b>SATA:</b> 7 pin (Data), 15 pin (Power)</p>
+            <p><b>VGA:</b> 15 pin, DVI: 24+1 pin</p>`
+    }
